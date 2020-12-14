@@ -1,3 +1,13 @@
 {
-  "token" : "1171901144:AAH3K-vF3jYcWFOlYSwsLIP7N0mk4NPXeiM"
+  "token" : "1171901144:AAH3K-vF3jYcWFOlYSwsLIP7N0mk4NPXeiM",
+  "triggers" : [
+    "итог",
+    "баланс",
+    "итого",
+    "всего",
+    "таблицу",
+    "расчёт",
+    "расчет"
+
+  ]
 }
