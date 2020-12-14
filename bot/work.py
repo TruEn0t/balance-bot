@@ -16,12 +16,14 @@ def find_data(text):
     num = 0
 
     for word in text.split(' '):
-        if '+' or '-' in word and can_float(word):
-            num = float(word)
+        if can_float(word.replace('+', '').replace('-', '')):
+            num = float(word.replace(',', '.'))
+            num = -num if not '+' in word else num
+
+            if '-' in word:
+                num = -num
 
         else:
             txt += word
-
-    print(text != '')
 
     return [txt, num] if num and text != '' else None
